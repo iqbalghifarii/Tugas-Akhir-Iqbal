@@ -4,9 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Iqbal Estate - Hunian Mewah & Eksklusif Indonesia</title>
+    <title>Iqbal Estate | Katalog Properti Mewah</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,179 +15,88 @@
     <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <style>
+      body { font-family: 'Montserrat', sans-serif !important; }
+      
+      /* Tombol WhatsApp Melayang */
+      .floating-wa {
+        position: fixed; bottom: 30px; right: 30px; background-color: #25d366;
+        color: #fff; padding: 12px 25px; border-radius: 50px; z-index: 9999;
+        font-weight: 700; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        display: flex; align-items: center; gap: 10px; text-decoration: none; transition: 0.3s;
+      }
+      .floating-wa:hover { background-color: #128c7e; color: #fff; transform: scale(1.05); }
+
+      /* Styling Katalog Properti sesuai Gambar 1 */
+      .properties .item { background-color: #fff; border-radius: 20px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+      .properties .item .category { background-color: #ffdad1; color: #f35525; padding: 5px 15px; border-radius: 5px; font-weight: 600; font-size: 14px; }
+      .properties .item .price { color: #f35525; font-weight: 800; font-size: 22px; float: right; }
+      .properties .item h4 { font-size: 20px; font-weight: 700; margin: 20px 0; }
+      .properties .item ul { border-top: 1px solid #eee; padding-top: 20px; list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; }
+      .properties .item ul li { width: 50%; font-size: 14px; margin-bottom: 10px; font-weight: 500; }
+      .properties .item ul li span { font-weight: 700; display: block; }
+    </style>
   </head>
 
 <body>
 
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
+  <a href="https://wa.me/628123456789" class="floating-wa" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Tanya Agen</span>
+  </a>
 
-  <div class="sub-header">
+  <div class="properties section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <ul class="info">
-            <li><i class="fa fa-envelope"></i> contact@iqbalestate.id</li>
-            <li><i class="fa fa-map"></i> Jl. Jendral Sudirman No. 18, Jakarta Selatan</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <ul class="social-links">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://wa.me/628123456789" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <a href="index.html" class="logo">
-                        <h1>IQBAL<span style="color: #f35525;">ESTATE</span></h1>
-                    </a>
-                    <ul class="nav">
-                      <li><a href="index.html" class="active">Beranda</a></li>
-                      <li><a href="properties.html">Daftar Properti</a></li>
-                      <li><a href="property-details.html">Detail</a></li>
-                      <li><a href="contact.html">Hubungi Kami</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Konsultasi Gratis</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-
-  <div class="main-banner">
-    <div class="owl-carousel owl-banner">
-      <div class="item item-1">
-        <div class="header-text">
-          <span class="category">Kebayoran Baru, <em>Jakarta</em></span>
-          <h2>Wujudkan<br>Hunian Impian di Jantung Kota</h2>
-        </div>
-      </div>
-      <div class="item item-2">
-        <div class="header-text">
-          <span class="category">Seminyak, <em>Bali</em></span>
-          <h2>Eksklusif<br>Villa Tropis dengan Privasi Maksimal</h2>
-        </div>
-      </div>
-      <div class="item item-3">
-        <div class="header-text">
-          <span class="category">Setiabudi, <em>Bandung</em></span>
-          <h2>Asri<br>Rumah Modern dengan Udara Pegunungan</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="featured section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="left-image">
-            <img src="assets/images/featured.jpg" alt="">
-            <a href="property-details.html"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="section-heading">
-            <h6>| Unit Unggulan</h6>
-            <h2>Apartemen Premium & View Kota Terbaik</h2>
-          </div>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Kenapa Memilih Iqbal Estate?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                Kami kurasi <strong>properti terbaik</strong> di lokasi strategis Indonesia. Setiap unit dipastikan memiliki legalitas (SHM/HGB) yang jelas dan potensi kenaikan nilai investasi yang tinggi.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Bagaimana Proses Kunjungan?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Anda cukup menjadwalkan waktu melalui form di bawah atau via WhatsApp. Agen kami akan mendampingi Anda melihat langsung unit tanpa biaya tambahan.
-                </div>
-              </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="item">
+            <img src="assets/images/property-01.jpg" alt="">
+            <div class="p-4">
+              <span class="category">Villa Mewah</span>
+              <span class="price">Rp 22.6 Miliar</span>
+              <h4>18 Jalan Baru, Jakarta Selatan</h4>
+              <ul>
+                <li>Kamar Tidur: <span>8</span></li>
+                <li>Kamar Mandi: <span>8</span></li>
+                <li>Luas: <span>545m2</span></li>
+                <li>Lantai: <span>3</span></li>
+                <li>Parkir: <span>6 mobil</span></li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="info-table">
-            <ul>
-              <li>
-                <img src="assets/images/info-icon-01.png" alt="" style="max-width: 52px;">
-                <h4>250 m2<br><span>Luas Bangunan</span></h4>
-              </li>
-              <li>
-                <img src="assets/images/info-icon-02.png" alt="" style="max-width: 52px;">
-                <h4>SHM<br><span>Legalitas Aman</span></h4>
-              </li>
-              <li>
-                <img src="assets/images/info-icon-03.png" alt="" style="max-width: 52px;">
-                <h4>Transfer/KPR<br><span>Opsi Pembayaran</span></h4>
-              </li>
-              <li>
-                <img src="assets/images/info-icon-04.png" alt="" style="max-width: 52px;">
-                <h4>High Security<br><span>One Gate System</span></h4>
-              </li>
-            </ul>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="item">
+            <img src="assets/images/property-02.jpg" alt="">
+            <div class="p-4">
+              <span class="category">Villa Mewah</span>
+              <span class="price">Rp 11.8 Miliar</span>
+              <h4>54 Jalan Tengah, Bali</h4>
+              <ul>
+                <li>Kamar Tidur: <span>6</span></li>
+                <li>Kamar Mandi: <span>5</span></li>
+                <li>Luas: <span>450m2</span></li>
+                <li>Lantai: <span>3</span></li>
+                <li>Parkir: <span>8 mobil</span></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="145" data-speed="1000"></h2>
-                   <p class="count-text ">Unit<br>Terjual 2023</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2>
-                  <p class="count-text ">Tahun<br>Pengalaman</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="28" data-speed="1000"></h2>
-                  <p class="count-text ">Penghargaan<br>Layanan Terbaik</p>
-                </div>
-              </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="item">
+            <img src="assets/images/property-03.jpg" alt="">
+            <div class="p-4">
+              <span class="category">Villa Mewah</span>
+              <span class="price">Rp 14.6 Miliar</span>
+              <h4>26 Jalan Lama, Bandung</h4>
+              <ul>
+                <li>Kamar Tidur: <span>5</span></li>
+                <li>Kamar Mandi: <span>4</span></li>
+                <li>Luas: <span>225m2</span></li>
+                <li>Lantai: <span>3</span></li>
+                <li>Parkir: <span>10 mobil</span></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -194,103 +104,53 @@
     </div>
   </div>
 
-  <div class="section best-deal">
+  <div class="contact-section section" style="background-image: url('assets/images/contact-bg.jpg'); background-attachment: fixed; background-size: cover; padding: 100px 0;">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <div class="section-heading">
-            <h6>| Penawaran Spesial</h6>
-            <h2>Pilihan Eksklusif Untuk Anda</h2>
-          </div>
+        <div class="col-lg-12 text-center mb-5">
+          <h6 style="color: #f35525; font-weight: 700;">| CONTACT US</h6>
+          <h2 style="color: #fff; font-size: 36px; font-weight: 800;">Get In Touch With<br>Our Agents</h2>
         </div>
-        <div class="col-lg-12">
-          <div class="tabs-content">
-            <div class="row">
-              <div class="nav-wrapper ">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab">Apartemen Jakarta</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab">Villa Bali</button>
-                  </li>
-                </ul>
-              </div>              
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="appartment" role="tabpanel">
-                  <div class="row">
-                    <div class="col-lg-3">
-                      <div class="info-table">
-                        <ul>
-                          <li>Luas Ruang <span>185 m2</span></li>
-                          <li>Lantai <span>26</span></li>
-                          <li>Kamar <span>4</span></li>
-                          <li>Parkir <span>2 Mobil</span></li>
-                          <li>Status <span>Siap Huni</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <img src="assets/images/deal-01.jpg" alt="Interior Jakarta">
-                    </div>
-                    <div class="col-lg-3">
-                      <h4>Kenapa Apartemen Ini?</h4>
-                      <p>Berada di pusat bisnis Jakarta, unit ini menawarkan kemudahan akses dan gaya hidup mewah bagi profesional muda.</p>
-                      <div class="icon-button">
-                        <a href="contact.html"><i class="fa fa-calendar"></i> Hubungi Sekarang</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-6" data-aos="fade-right">
           <div id="map">
-            <iframe src="http://googleusercontent.com/maps.google.com/7" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126932.1465922378!2d106.74411135431692!3d-6.220265215682855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e498c6ad61%3A0x28c005610196230b!2sJakarta%20Selatan%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="400px" frameborder="0" style="border:0; border-radius: 10px;" allowfullscreen=""></iframe>
           </div>
-          <div class="row">
+          <div class="row mt-4">
             <div class="col-lg-6">
-              <div class="item phone">
-                <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
-                <h6>021-123-8888<br><span>Layanan Telepon</span></h6>
+              <div class="item" style="background: #fff; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 15px;">
+                <i class="fa fa-phone" style="color: #f35525; font-size: 24px;"></i>
+                <p style="margin: 0; font-weight: 700;">021-1234-5678<br><span style="font-weight: 400; color: #aaa;">Phone Number</span></p>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="item email">
-                <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
-                <h6>info@iqbalestate.id<br><span>Email Bisnis</span></h6>
+              <div class="item" style="background: #fff; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 15px;">
+                <i class="fa fa-envelope" style="color: #f35525; font-size: 24px;"></i>
+                <p style="margin: 0; font-weight: 700;">info@iqbalestate.id<br><span style="font-weight: 400; color: #aaa;">Business Email</span></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-5">
-          <form id="contact-form" action="" method="post">
+        <div class="col-lg-6" data-aos="fade-left">
+          <form id="contact-form" action="" method="post" style="background: #fff; padding: 40px; border-radius: 10px;">
             <div class="row">
-              <div class="col-lg-12">
-                <fieldset>
-                  <label for="name">Nama Lengkap</label>
-                  <input type="name" name="name" id="name" placeholder="Nama Anda..." required>
-                </fieldset>
+              <div class="col-lg-12 mb-3">
+                <label>Full Name</label>
+                <input type="text" class="form-control" placeholder="Your Name..." required style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px;">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="Your E-mail..." required style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px;">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <label>Subject</label>
+                <input type="text" class="form-control" placeholder="Subject..." style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px;">
+              </div>
+              <div class="col-lg-12 mb-4">
+                <label>Message</label>
+                <textarea class="form-control" placeholder="Your Message" style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px; height: 100px;"></textarea>
               </div>
               <div class="col-lg-12">
-                <fieldset>
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" placeholder="Email Anda..." required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Kirim Pesan Sekarang</button>
-                </fieldset>
+                <button type="submit" class="btn" style="background: #1e1e1e; color: #fff; border-radius: 25px; padding: 10px 30px; font-weight: 600;">Send Message</button>
               </div>
             </div>
           </form>
@@ -299,20 +159,12 @@
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Hak Cipta © 2026 Iqbal Estate Indonesia. Seluruh hak dilindungi undang-undang.</p>
-      </div>
-    </div>
-  </footer>
-
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 
-  </body>
+</body>
 </html>
