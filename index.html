@@ -10,7 +10,6 @@
     <title>Iqbal Estate | Hunian Mewah & Eksklusif Indonesia</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
@@ -28,15 +27,13 @@
       }
       .floating-wa:hover { background-color: #128c7e; color: #fff; transform: scale(1.05); }
 
-      /* Penyesuaian Katalog Properti */
-      .property-item { background-color: #fff; border-radius: 20px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.3s; }
-      .property-item:hover { transform: translateY(-10px); }
-      .property-item .category-tag { background-color: #ffdad1; color: #f35525; padding: 5px 15px; border-radius: 5px; font-weight: 600; font-size: 14px; }
-      .property-item .price-tag { color: #f35525; font-weight: 800; font-size: 20px; float: right; }
-      .property-item h4 { font-size: 18px; font-weight: 700; margin: 20px 0; min-height: 44px; }
-      .property-item ul { border-top: 1px solid #eee; padding-top: 20px; list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; }
-      .property-item ul li { width: 50%; font-size: 13px; margin-bottom: 10px; color: #4a4a4a; }
-      .property-item ul li span { font-weight: 700; color: #1e1e1e; display: block; }
+      /* Video Section Styling (Gambar 2) */
+      .video-section { background-image: url('assets/images/video-bg.jpg'); background-size: cover; padding: 120px 0; position: relative; text-align: center; color: #fff; }
+      .video-frame { position: relative; display: inline-block; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.2); }
+      .play-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: #f35525; border-radius: 50%; color: #fff; line-height: 60px; font-size: 20px; }
+
+      /* Map in Consultation Box */
+      .map-consultation { border-radius: 15px; overflow: hidden; margin-top: 20px; border: 1px solid #eee; }
     </style>
   </head>
 
@@ -46,26 +43,6 @@
     <i class="fab fa-whatsapp"></i>
     <span>Tanya Agen</span>
   </a>
-
-  <div class="sub-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <ul class="info">
-            <li><i class="fa fa-envelope"></i> contact@iqbalestate.id</li>
-            <li><i class="fa fa-map"></i> Jl. Jendral Sudirman No. 18, Jakarta Selatan</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <ul class="social-links">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <header class="header-area header-sticky">
     <div class="container">
@@ -78,9 +55,8 @@
                     <ul class="nav">
                       <li><a href="index.html" class="active">Beranda</a></li>
                       <li><a href="properties.html">Daftar Properti</a></li>
-                      <li><a href="property-details.html">Detail</a></li>
                       <li><a href="contact.html">Hubungi Kami</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Konsultasi</a></li>
+                      <li><a href="#consultation"><i class="fa fa-calendar"></i> Konsultasi Gratis</a></li>
                   </ul>   
                     <a class='menu-trigger'><span>Menu</span></a>
                 </nav>
@@ -97,10 +73,63 @@
           <h2>Wujudkan<br>Hunian Impian di Jantung Kota</h2>
         </div>
       </div>
-      <div class="item item-2">
-        <div class="header-text">
-          <span class="category">Seminyak, <em>Bali</em></span>
-          <h2>Eksklusif<br>Villa Tropis dengan Privasi Maksimal</h2>
+    </div>
+  </div>
+
+  <div class="featured section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <div class="left-image">
+            <img src="assets/images/featured.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5" data-aos="fade-up">
+          <div class="section-heading">
+            <h6>| Featured</h6>
+            <h2>Best Appartment & Sea View</h2>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#c1">Best useful links?</button></h2>
+              <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Dapatkan properti terbaik dengan legalitas terjamin dan view spektakuler di lokasi paling strategis.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#c2">How does this work?</button></h2>
+              <div id="c2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Proses mudah dari konsultasi hingga serah terima kunci.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-left">
+          <div class="info-table">
+            <ul>
+              <li><img src="assets/images/info-icon-01.png" alt=""><h4>250 m2<br><span>Total Flat Space</span></h4></li>
+              <li><img src="assets/images/info-icon-02.png" alt=""><h4>Contract<br><span>Contract Ready</span></h4></li>
+              <li><img src="assets/images/info-icon-03.png" alt=""><h4>Payment<br><span>Payment Process</span></h4></li>
+              <li><img src="assets/images/info-icon-04.png" alt=""><h4>Safety<br><span>24/7 Under Control</span></h4></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h6 style="color: #f35525;">| Video View</h6>
+            <h2 style="color: #fff;">Get Closer View & Different Feeling</h2>
+          </div>
+          <div class="video-frame" data-aos="zoom-in">
+            <img src="assets/images/video-frame.jpg" alt="">
+            <a href="https://youtube.com" target="_blank" class="play-button"><i class="fa fa-play"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -110,122 +139,69 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6" data-aos="fade-up">
-          <div class="property-item">
-            <img src="assets/images/property-01.jpg" alt="">
-            <div class="p-4">
-              <span class="category-tag">Villa Mewah</span>
-              <span class="price-tag">Rp 22.6 Miliar</span>
-              <h4>18 Jalan Baru, Jakarta Selatan</h4>
-              <ul>
-                <li>Kamar Tidur: <span>8</span></li>
-                <li>Kamar Mandi: <span>8</span></li>
-                <li>Luas: <span>545m2</span></li>
-                <li>Lantai: <span>3</span></li>
-                <li>Parkir: <span>6 mobil</span></li>
-              </ul>
-            </div>
+          <div class="item property-item" style="background:#fff; border-radius:20px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+            <img src="assets/images/property-01.jpg" alt="" style="border-radius:15px; margin-bottom:20px;">
+            <span class="category" style="background:#ffdad1; color:#f35525; padding:5px 15px; border-radius:5px; font-weight:600;">Villa Mewah</span>
+            <span class="price" style="float:right; color:#f35525; font-weight:800; font-size:18px;">Rp 22.6 Miliar</span>
+            <h4 style="margin:20px 0; font-size:18px; font-weight:700;">18 Jalan Baru, Jakarta Selatan</h4>
+            <ul style="list-style:none; padding:0; border-top:1px solid #eee; pt-3;">
+              <li style="display:inline-block; width:48%;">Kamar Tidur: <b>8</b></li>
+              <li style="display:inline-block; width:48%;">Kamar Mandi: <b>8</b></li>
+              <li style="display:inline-block; width:48%;">Luas: <b>545m2</b></li>
+              <li style="display:inline-block; width:48%;">Lantai: <b>3</b></li>
+              <li style="display:inline-block; width:48%;">Parkir: <b>6 mobil</b></li>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="property-item">
-            <img src="assets/images/property-02.jpg" alt="">
-            <div class="p-4">
-              <span class="category-tag">Villa Mewah</span>
-              <span class="price-tag">Rp 11.8 Miliar</span>
-              <h4>54 Jalan Tengah, Bali</h4>
-              <ul>
-                <li>Kamar Tidur: <span>6</span></li>
-                <li>Kamar Mandi: <span>5</span></li>
-                <li>Luas: <span>450m2</span></li>
-                <li>Lantai: <span>3</span></li>
-                <li>Parkir: <span>8 mobil</span></li>
-              </ul>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="property-item">
-            <img src="assets/images/property-03.jpg" alt="">
-            <div class="p-4">
-              <span class="category-tag">Villa Mewah</span>
-              <span class="price-tag">Rp 14.6 Miliar</span>
-              <h4>26 Jalan Lama, Bandung</h4>
-              <ul>
-                <li>Kamar Tidur: <span>5</span></li>
-                <li>Kamar Mandi: <span>4</span></li>
-                <li>Luas: <span>225m2</span></li>
-                <li>Lantai: <span>3</span></li>
-                <li>Parkir: <span>10 mobil</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
-  <div class="fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row text-center">
-              <div class="col-lg-4"><div class="counter"><h2 class="timer count-title count-number" data-to="145" data-speed="1000"></h2><p class="count-text ">Unit Terjual</p></div></div>
-              <div class="col-lg-4"><div class="counter"><h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2><p class="count-text ">Tahun Pengalaman</p></div></div>
-              <div class="col-lg-4"><div class="counter"><h2 class="timer count-title count-number" data-to="28" data-speed="1000"></h2><p class="count-text ">Penghargaan</p></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact-section section" style="background-image: url('assets/images/contact-bg.jpg'); background-size: cover; padding: 100px 0; background-attachment: fixed;">
+  <div id="consultation" class="contact-section section" style="background-image: url('assets/images/contact-bg.jpg'); background-size: cover; padding: 100px 0;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center mb-5">
-          <h6 style="color: #f35525; font-weight: 700;">| HUBUNGI KAMI</h6>
-          <h2 style="color: #fff; font-size: 36px; font-weight: 800;">Dapatkan Konsultasi Gratis<br>Dengan Agen Terbaik</h2>
+          <h6 style="color: #f35525; font-weight: 700;">| KONSULTASI GRATIS</h6>
+          <h2 style="color: #fff; font-size: 36px; font-weight: 800;">Get In Touch With Our Agents</h2>
         </div>
+        
         <div class="col-lg-6" data-aos="fade-right">
-          <div id="map">
-            <iframe src="http://googleusercontent.com/maps.google.com/7" width="100%" height="400px" frameborder="0" style="border:0; border-radius: 10px;" allowfullscreen=""></iframe>
-          </div>
-          <div class="row mt-4">
-            <div class="col-lg-6 mb-3">
-              <div style="background: #fff; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 15px;">
-                <i class="fa fa-phone" style="color: #f35525; font-size: 20px;"></i>
-                <p style="margin: 0; font-weight: 700;">021-123-8888<br><span style="font-weight: 400; font-size: 12px; color: #aaa;">Layanan Telepon</span></p>
-              </div>
-            </div>
-            <div class="col-lg-6 mb-3">
-              <div style="background: #fff; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 15px;">
-                <i class="fa fa-envelope" style="color: #f35525; font-size: 20px;"></i>
-                <p style="margin: 0; font-weight: 700;">info@iqbalestate.id<br><span style="font-weight: 400; font-size: 12px; color: #aaa;">Email Bisnis</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left">
-          <form id="contact-form" action="" method="post" style="background: #fff; padding: 40px; border-radius: 10px;">
+          <form id="contact-form" action="" method="post" style="background: #fff; padding: 40px; border-radius: 15px;">
             <div class="row">
               <div class="col-lg-12 mb-3">
-                <label>Nama Lengkap</label>
-                <input type="text" placeholder="Nama Anda..." required style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px; width: 100%;">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your Name..." required style="width:100%; border-radius:20px; background:#f6f6f6; border:none; padding:12px 20px;">
               </div>
               <div class="col-lg-12 mb-3">
-                <label>Email</label>
-                <input type="email" placeholder="Email Anda..." required style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px; width: 100%;">
+                <label>Email Address</label>
+                <input type="email" placeholder="Your E-mail..." required style="width:100%; border-radius:20px; background:#f6f6f6; border:none; padding:12px 20px;">
               </div>
               <div class="col-lg-12 mb-4">
-                <label>Pesan</label>
-                <textarea placeholder="Pesan Anda..." style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px; height: 100px; width: 100%;"></textarea>
+                <label>Message</label>
+                <textarea placeholder="Your Message" style="width:100%; border-radius:20px; background:#f6f6f6; border:none; padding:12px 20px; height:80px;"></textarea>
               </div>
               <div class="col-lg-12">
-                <button type="submit" style="background: #f35525; color: #fff; border: none; border-radius: 25px; padding: 12px 35px; font-weight: 600; width: 100%;">Kirim Sekarang</button>
+                <button type="submit" style="background:#1e1e1e; color:#fff; border:none; border-radius:25px; padding:12px 30px; font-weight:600; width:100%;">Send Message</button>
               </div>
             </div>
           </form>
+
+          <div class="map-consultation">
+            <iframe src="http://googleusercontent.com/maps.google.com/9" width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="contact-info" style="padding-left: 30px;">
+            <div style="background:#fff; padding:25px; border-radius:15px; display:flex; align-items:center; gap:20px; mb-4;">
+              <i class="fa fa-phone" style="color:#f35525; font-size:24px;"></i>
+              <p style="margin:0; font-weight:700;">010-020-0340<br><span style="font-weight:400; color:#aaa;">Phone Number</span></p>
+            </div>
+            <div style="background:#fff; padding:25px; border-radius:15px; display:flex; align-items:center; gap:20px; mt-4;">
+              <i class="fa fa-envelope" style="color:#f35525; font-size:24px;"></i>
+              <p style="margin:0; font-weight:700;">info@villa.co<br><span style="font-weight:400; color:#aaa;">Business Email</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -233,15 +209,12 @@
 
   <footer>
     <div class="container text-center">
-      <p>Hak Cipta © 2026 Iqbal Estate Indonesia. Seluruh hak dilindungi undang-undang.</p>
+      <p>Copyright © 2026 Iqbal Estate Indonesia. All Rights Reserved.</p>
     </div>
   </footer>
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script> AOS.init({ duration: 1000, once: true }); </script>
