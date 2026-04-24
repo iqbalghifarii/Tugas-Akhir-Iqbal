@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="id">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Iqbal Estate | Hunian Mewah & Eksklusif Indonesia</title>
+  <title>Iqbal Estate | Hunian Mewah & Eksklusif Indonesia</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
 
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+  <style>
+    body { font-family: 'Montserrat', sans-serif !important; }
+    
+    /* Floating WhatsApp Button */
+    .floating-wa {
+      position: fixed; bottom: 30px; right: 30px; background-color: #25d366;
+      color: #fff; padding: 12px 25px; border-radius: 50px; z-index: 9999;
+      font-weight: 700; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      display: flex; align-items: center; gap: 10px; text-decoration: none; transition: 0.3s;
+    }
+    .floating-wa:hover { background-color: #128c7e; color: #fff; transform: scale(1.05); }
 
-    <style>
-      body { font-family: 'Montserrat', sans-serif !important; }
-      
-      /* Floating WhatsApp Button */
-      .floating-wa {
-        position: fixed; bottom: 30px; right: 30px; background-color: #25d366;
-        color: #fff; padding: 12px 25px; border-radius: 50px; z-index: 9999;
-        font-weight: 700; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        display: flex; align-items: center; gap: 10px; text-decoration: none; transition: 0.3s;
-      }
-      .floating-wa:hover { background-color: #128c7e; color: #fff; transform: scale(1.05); }
+    /* Penyesuaian Katalog Properti */
+    .property-item { background-color: #fff; border-radius: 20px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.3s; }
+    .property-item:hover { transform: translateY(-10px); }
+    .property-item .category-tag { background-color: #ffdad1; color: #f35525; padding: 5px 15px; border-radius: 5px; font-weight: 600; font-size: 14px; }
+    .property-item .price-tag { color: #f35525; font-weight: 800; font-size: 20px; float: right; }
+    .property-item h4 { font-size: 18px; font-weight: 700; margin: 20px 0; min-height: 44px; }
+    .property-item ul { border-top: 1px solid #eee; padding-top: 20px; list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; }
+    .property-item ul li { width: 50%; font-size: 13px; margin-bottom: 10px; color: #4a4a4a; }
+    .property-item ul li span { font-weight: 700; color: #1e1e1e; display: block; }
 
-      /* Penyesuaian Katalog Properti */
-      .property-item { background-color: #fff; border-radius: 20px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.3s; }
-      .property-item:hover { transform: translateY(-10px); }
-      .property-item .category-tag { background-color: #ffdad1; color: #f35525; padding: 5px 15px; border-radius: 5px; font-weight: 600; font-size: 14px; }
-      .property-item .price-tag { color: #f35525; font-weight: 800; font-size: 20px; float: right; }
-      .property-item h4 { font-size: 18px; font-weight: 700; margin: 20px 0; min-height: 44px; }
-      .property-item ul { border-top: 1px solid #eee; padding-top: 20px; list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; }
-      .property-item ul li { width: 50%; font-size: 13px; margin-bottom: 10px; color: #4a4a4a; }
-      .property-item ul li span { font-weight: 700; color: #1e1e1e; display: block; }
-    </style>
-  </head>
+    /* Styling Tambahan Map dalam Kolom */
+    .map-container { border-radius: 15px; overflow: hidden; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+  </style>
+</head>
 
 <body>
 
@@ -69,23 +71,23 @@
 
   <header class="header-area header-sticky">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <a href="index.html" class="logo">
-                        <h1>IQBAL<span style="color: #f35525;">ESTATE</span></h1>
-                    </a>
-                    <ul class="nav">
-                      <li><a href="index.html" class="active">Beranda</a></li>
-                      <li><a href="properties.html">Daftar Properti</a></li>
-                      <li><a href="property-details.html">Detail</a></li>
-                      <li><a href="contact.html">Hubungi Kami</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Konsultasi</a></li>
-                  </ul>   
-                    <a class='menu-trigger'><span>Menu</span></a>
-                </nav>
-            </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <h1>IQBAL<span style="color: #f35525;">ESTATE</span></h1>
+            </a>
+            <ul class="nav">
+              <li><a href="index.html" class="active">Beranda</a></li>
+              <li><a href="properties.html">Daftar Properti</a></li>
+              <li><a href="property-details.html">Detail</a></li>
+              <li><a href="contact.html">Hubungi Kami</a></li>
+              <li><a href="#consultation"><i class="fa fa-calendar"></i> Konsultasi Gratis</a></li>
+            </ul>
+            <a class='menu-trigger'><span>Menu</span></a>
+          </nav>
         </div>
+      </div>
     </div>
   </header>
 
@@ -101,6 +103,43 @@
         <div class="header-text">
           <span class="category">Seminyak, <em>Bali</em></span>
           <h2>Eksklusif<br>Villa Tropis dengan Privasi Maksimal</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image">
+            <img src="assets/images/featured.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="section-heading">
+            <h6>| Featured</h6>
+            <h2>Best Appartment & Sea View</h2>
+          </div>
+          <p>Dapatkan pengalaman tinggal di apartemen premium dengan pemandangan laut yang menakjubkan dan fasilitas kelas dunia.</p>
+          <div class="video-content mt-4" data-aos="zoom-in">
+            <h6 style="color: #f35525;">| Video View</h6>
+            <h4>Get Closer View & Different Feeling</h4>
+            <div class="thumb" style="position: relative; margin-top: 20px;">
+              <img src="assets/images/video-frame.jpg" alt="" style="border-radius: 20px;">
+              <a href="https://youtube.com" target="_blank" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: #f35525; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px;"><i class="fa fa-play"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="info-table">
+            <ul>
+              <li><img src="assets/images/info-icon-01.png" alt=""><h4>250 m2<br><span>Total Flat Space</span></h4></li>
+              <li><img src="assets/images/info-icon-02.png" alt=""><h4>Contract<br><span>Contract Ready</span></h4></li>
+              <li><img src="assets/images/info-icon-03.png" alt=""><h4>Payment<br><span>Payment Process</span></h4></li>
+              <li><img src="assets/images/info-icon-04.png" alt=""><h4>Safety<br><span>24/7 Under Control</span></h4></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -180,33 +219,15 @@
     </div>
   </div>
 
-  <div class="contact-section section" style="background-image: url('assets/images/contact-bg.jpg'); background-size: cover; padding: 100px 0; background-attachment: fixed;">
+  <div id="consultation" class="contact-section section" style="background-image: url('assets/images/contact-bg.jpg'); background-size: cover; padding: 100px 0; background-attachment: fixed;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center mb-5">
           <h6 style="color: #f35525; font-weight: 700;">| HUBUNGI KAMI</h6>
-          <h2 style="color: #fff; font-size: 36px; font-weight: 800;">Dapatkan Konsultasi Gratis<br>Dengan Agen Terbaik</h2>
+          <h2 style="color: #fff; font-size: 36px; font-weight: 800;">Get In Touch With Our Agents</h2>
         </div>
+        
         <div class="col-lg-6" data-aos="fade-right">
-          <div id="map">
-            <iframe src="http://googleusercontent.com/maps.google.com/7" width="100%" height="400px" frameborder="0" style="border:0; border-radius: 10px;" allowfullscreen=""></iframe>
-          </div>
-          <div class="row mt-4">
-            <div class="col-lg-6 mb-3">
-              <div style="background: #fff; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 15px;">
-                <i class="fa fa-phone" style="color: #f35525; font-size: 20px;"></i>
-                <p style="margin: 0; font-weight: 700;">021-123-8888<br><span style="font-weight: 400; font-size: 12px; color: #aaa;">Layanan Telepon</span></p>
-              </div>
-            </div>
-            <div class="col-lg-6 mb-3">
-              <div style="background: #fff; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 15px;">
-                <i class="fa fa-envelope" style="color: #f35525; font-size: 20px;"></i>
-                <p style="margin: 0; font-weight: 700;">info@iqbalestate.id<br><span style="font-weight: 400; font-size: 12px; color: #aaa;">Email Bisnis</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left">
           <form id="contact-form" action="" method="post" style="background: #fff; padding: 40px; border-radius: 10px;">
             <div class="row">
               <div class="col-lg-12 mb-3">
@@ -222,10 +243,27 @@
                 <textarea placeholder="Pesan Anda..." style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px; height: 100px; width: 100%;"></textarea>
               </div>
               <div class="col-lg-12">
-                <button type="submit" style="background: #f35525; color: #fff; border: none; border-radius: 25px; padding: 12px 35px; font-weight: 600; width: 100%;">Kirim Sekarang</button>
+                <button type="submit" style="background: #1e1e1e; color: #fff; border: none; border-radius: 25px; padding: 12px 35px; font-weight: 600; width: 100%;">Kirim Sekarang</button>
               </div>
             </div>
           </form>
+
+          <div class="map-container">
+            <iframe src="http://googleusercontent.com/maps.google.com/7" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="contact-info-boxes" style="padding-left: 20px;">
+            <div class="mb-4" style="background: #fff; padding: 25px; border-radius: 15px; display: flex; align-items: center; gap: 15px;">
+              <i class="fa fa-phone" style="color: #f35525; font-size: 24px;"></i>
+              <p style="margin: 0; font-weight: 700;">021-123-8888<br><span style="font-weight: 400; color: #aaa;">Layanan Telepon</span></p>
+            </div>
+            <div style="background: #fff; padding: 25px; border-radius: 15px; display: flex; align-items: center; gap: 15px;">
+              <i class="fa fa-envelope" style="color: #f35525; font-size: 24px;"></i>
+              <p style="margin: 0; font-weight: 700;">info@iqbalestate.id<br><span style="font-weight: 400; color: #aaa;">Email Bisnis</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
