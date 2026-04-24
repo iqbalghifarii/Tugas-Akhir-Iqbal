@@ -1,213 +1,250 @@
 <!DOCTYPE html>
 <html lang="id">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Iqbal Estate | Jual Beli Properti Mewah Terpercaya</title>
+    <title>Iqbal Estate | Hunian Mewah & Eksklusif Indonesia</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 
-    <style>
-      /* Custom Styling untuk membuang kesan template */
-      body { font-family: 'Montserrat', sans-serif !important; }
-      .floating-wa {
-        position: fixed; bottom: 30px; right: 30px; background-color: #25d366;
-        color: #fff; padding: 12px 25px; border-radius: 50px; z-index: 9999;
-        font-weight: 700; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        display: flex; align-items: center; gap: 10px; text-decoration: none; transition: 0.3s;
-      }
-      .floating-wa:hover { background-color: #128c7e; color: #fff; transform: scale(1.05); }
-      .main-nav .logo h1 { font-weight: 800 !important; text-transform: uppercase; letter-spacing: 1px; }
-    </style>
-  </head>
+    <style>
+      body { font-family: 'Montserrat', sans-serif !important; }
+      
+      /* Floating WhatsApp Button */
+      .floating-wa {
+        position: fixed; bottom: 30px; right: 30px; background-color: #25d366;
+        color: #fff; padding: 12px 25px; border-radius: 50px; z-index: 9999;
+        font-weight: 700; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        display: flex; align-items: center; gap: 10px; text-decoration: none; transition: 0.3s;
+      }
+      .floating-wa:hover { background-color: #128c7e; color: #fff; transform: scale(1.05); }
+
+      /* Penyesuaian Katalog Properti */
+      .property-item { background-color: #fff; border-radius: 20px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.3s; }
+      .property-item:hover { transform: translateY(-10px); }
+      .property-item .category-tag { background-color: #ffdad1; color: #f35525; padding: 5px 15px; border-radius: 5px; font-weight: 600; font-size: 14px; }
+      .property-item .price-tag { color: #f35525; font-weight: 800; font-size: 20px; float: right; }
+      .property-item h4 { font-size: 18px; font-weight: 700; margin: 20px 0; min-height: 44px; }
+      .property-item ul { border-top: 1px solid #eee; padding-top: 20px; list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; }
+      .property-item ul li { width: 50%; font-size: 13px; margin-bottom: 10px; color: #4a4a4a; }
+      .property-item ul li span { font-weight: 700; color: #1e1e1e; display: block; }
+    </style>
+  </head>
 
 <body>
 
-  <a href="https://wa.me/628123456789" class="floating-wa" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-    <span>Tanya Agen</span>
-  </a>
+  <a href="https://wa.me/628123456789" class="floating-wa" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Tanya Agen</span>
+  </a>
 
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots"><span></span><span></span><span></span></div>
-    </div>
-  </div>
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i> contact@iqbalestate.id</li>
+            <li><i class="fa fa-map"></i> Jl. Jendral Sudirman No. 18, Jakarta Selatan</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="sub-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <ul class="info">
-            <li><i class="fa fa-envelope"></i> contact@iqbalestate.id</li>
-            <li><i class="fa fa-map"></i> Kawasan SCBD, Jakarta Selatan</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <ul class="social-links">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <h1>IQBAL<span style="color: #f35525;">ESTATE</span></h1>
+                    </a>
+                    <ul class="nav">
+                      <li><a href="index.html" class="active">Beranda</a></li>
+                      <li><a href="properties.html">Daftar Properti</a></li>
+                      <li><a href="property-details.html">Detail</a></li>
+                      <li><a href="contact.html">Hubungi Kami</a></li>
+                      <li><a href="#"><i class="fa fa-calendar"></i> Konsultasi</a></li>
+                  </ul>   
+                    <a class='menu-trigger'><span>Menu</span></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
 
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <a href="index.html" class="logo">
-                        <h1>IQBAL<span style="color: #f35525;">ESTATE</span></h1>
-                    </a>
-                    <ul class="nav">
-                      <li><a href="index.html" class="active">Beranda</a></li>
-                      <li><a href="properties.html">Katalog</a></li>
-                      <li><a href="contact.html">Kontak</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Private Tour</a></li>
-                  </ul>   
-                    <a class='menu-trigger'><span>Menu</span></a>
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
+  <div class="main-banner">
+    <div class="owl-carousel owl-banner">
+      <div class="item item-1">
+        <div class="header-text">
+          <span class="category">Kebayoran Baru, <em>Jakarta</em></span>
+          <h2>Wujudkan<br>Hunian Impian di Jantung Kota</h2>
+        </div>
+      </div>
+      <div class="item item-2">
+        <div class="header-text">
+          <span class="category">Seminyak, <em>Bali</em></span>
+          <h2>Eksklusif<br>Villa Tropis dengan Privasi Maksimal</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="main-banner">
-    <div class="owl-carousel owl-banner">
-      <div class="item item-1">
-        <div class="header-text" data-aos="zoom-in">
-          <span class="category">Sudirman, <em>Jakarta</em></span>
-          <h2>Investasi<br>Masa Depan di Pusat Bisnis</h2>
-        </div>
-      </div>
-      <div class="item item-2">
-        <div class="header-text">
-          <span class="category">Uluwatu, <em>Bali</em></span>
-          <h2>Ketenangan<br>Villa Mewah di Tepi Tebing</h2>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="section properties">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="property-item">
+            <img src="assets/images/property-01.jpg" alt="">
+            <div class="p-4">
+              <span class="category-tag">Villa Mewah</span>
+              <span class="price-tag">Rp 22.6 Miliar</span>
+              <h4>18 Jalan Baru, Jakarta Selatan</h4>
+              <ul>
+                <li>Kamar Tidur: <span>8</span></li>
+                <li>Kamar Mandi: <span>8</span></li>
+                <li>Luas: <span>545m2</span></li>
+                <li>Lantai: <span>3</span></li>
+                <li>Parkir: <span>6 mobil</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="property-item">
+            <img src="assets/images/property-02.jpg" alt="">
+            <div class="p-4">
+              <span class="category-tag">Villa Mewah</span>
+              <span class="price-tag">Rp 11.8 Miliar</span>
+              <h4>54 Jalan Tengah, Bali</h4>
+              <ul>
+                <li>Kamar Tidur: <span>6</span></li>
+                <li>Kamar Mandi: <span>5</span></li>
+                <li>Luas: <span>450m2</span></li>
+                <li>Lantai: <span>3</span></li>
+                <li>Parkir: <span>8 mobil</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="property-item">
+            <img src="assets/images/property-03.jpg" alt="">
+            <div class="p-4">
+              <span class="category-tag">Villa Mewah</span>
+              <span class="price-tag">Rp 14.6 Miliar</span>
+              <h4>26 Jalan Lama, Bandung</h4>
+              <ul>
+                <li>Kamar Tidur: <span>5</span></li>
+                <li>Kamar Mandi: <span>4</span></li>
+                <li>Luas: <span>225m2</span></li>
+                <li>Lantai: <span>3</span></li>
+                <li>Parkir: <span>10 mobil</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="featured section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <div class="left-image">
-            <img src="assets/images/featured.jpg" alt="">
-            <a href="#"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px;"></a>
-          </div>
-        </div>
-        <div class="col-lg-5" data-aos="fade-up">
-          <div class="section-heading">
-            <h6>| Profil Kami</h6>
-            <h2>Kenapa Percayakan Properti Anda Pada Kami?</h2>
-          </div>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1">Legalitas 100% Terjamin</button></h2>
-              <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">Seluruh listing <strong>Iqbal Estate</strong> telah melalui verifikasi ketat. Kami hanya memasarkan properti dengan sertifikat (SHM/HGB) yang valid dan bebas sengketa.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">Jaringan Developer Luas</button></h2>
-              <div id="c2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">Kami bekerja sama dengan developer papan atas di Indonesia untuk memberikan harga perdana dan promo eksklusif bagi klien kami.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3" data-aos="fade-left">
-          <div class="info-table">
-            <ul>
-              <li><img src="assets/images/info-icon-01.png" alt=""><h4>Strategic<br><span>Lokasi Premium</span></h4></li>
-              <li><img src="assets/images/info-icon-02.png" alt=""><h4>Verified<br><span>Sertifikat SHM</span></h4></li>
-              <li><img src="assets/images/info-icon-03.png" alt=""><h4>Flexible<br><span>Opsi KPR Bank</span></h4></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="wrapper">
+            <div class="row text-center">
+              <div class="col-lg-4"><div class="counter"><h2 class="timer count-title count-number" data-to="145" data-speed="1000"></h2><p class="count-text ">Unit Terjual</p></div></div>
+              <div class="col-lg-4"><div class="counter"><h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2><p class="count-text ">Tahun Pengalaman</p></div></div>
+              <div class="col-lg-4"><div class="counter"><h2 class="timer count-title count-number" data-to="28" data-speed="1000"></h2><p class="count-text ">Penghargaan</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-4" data-aos="counter"><div class="counter"><h2 class="timer count-title count-number" data-to="250" data-speed="1000"></h2><p class="count-text">Unit Terjual</p></div></div>
-              <div class="col-lg-4" data-aos="counter"><div class="counter"><h2 class="timer count-title count-number" data-to="10" data-speed="1000"></h2><p class="count-text">Tahun Melayani</p></div></div>
-              <div class="col-lg-4" data-aos="counter"><div class="counter"><h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2><p class="count-text">Penghargaan Nasional</p></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="contact-section section" style="background-image: url('assets/images/contact-bg.jpg'); background-size: cover; padding: 100px 0; background-attachment: fixed;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h6 style="color: #f35525; font-weight: 700;">| HUBUNGI KAMI</h6>
+          <h2 style="color: #fff; font-size: 36px; font-weight: 800;">Dapatkan Konsultasi Gratis<br>Dengan Agen Terbaik</h2>
+        </div>
+        <div class="col-lg-6" data-aos="fade-right">
+          <div id="map">
+            <iframe src="http://googleusercontent.com/maps.google.com/7" width="100%" height="400px" frameborder="0" style="border:0; border-radius: 10px;" allowfullscreen=""></iframe>
+          </div>
+          <div class="row mt-4">
+            <div class="col-lg-6 mb-3">
+              <div style="background: #fff; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 15px;">
+                <i class="fa fa-phone" style="color: #f35525; font-size: 20px;"></i>
+                <p style="margin: 0; font-weight: 700;">021-123-8888<br><span style="font-weight: 400; font-size: 12px; color: #aaa;">Layanan Telepon</span></p>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-3">
+              <div style="background: #fff; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 15px;">
+                <i class="fa fa-envelope" style="color: #f35525; font-size: 20px;"></i>
+                <p style="margin: 0; font-weight: 700;">info@iqbalestate.id<br><span style="font-weight: 400; font-size: 12px; color: #aaa;">Email Bisnis</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <form id="contact-form" action="" method="post" style="background: #fff; padding: 40px; border-radius: 10px;">
+            <div class="row">
+              <div class="col-lg-12 mb-3">
+                <label>Nama Lengkap</label>
+                <input type="text" placeholder="Nama Anda..." required style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px; width: 100%;">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <label>Email</label>
+                <input type="email" placeholder="Email Anda..." required style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px; width: 100%;">
+              </div>
+              <div class="col-lg-12 mb-4">
+                <label>Pesan</label>
+                <textarea placeholder="Pesan Anda..." style="border-radius: 20px; background: #f6f6f6; border: none; padding: 12px 20px; height: 100px; width: 100%;"></textarea>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" style="background: #f35525; color: #fff; border: none; border-radius: 25px; padding: 12px 35px; font-weight: 600; width: 100%;">Kirim Sekarang</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="contact-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7" data-aos="fade-right">
-          <div id="map">
-            <iframe src="http://googleusercontent.com/maps.google.com/8" width="100%" height="450px" frameborder="0" style="border:0; border-radius: 10px;" allowfullscreen=""></iframe>
-          </div>
-        </div>
-        <div class="col-lg-5" data-aos="fade-left">
-          <form id="contact-form" action="https://formspree.io/f/your-id" method="post">
-            <div class="row">
-              <div class="col-lg-12">
-                <fieldset><label>Nama Lengkap</label><input type="text" placeholder="Masukkan nama..." required></fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset><label>Keperluan</label><input type="text" placeholder="Contoh: Titip Jual / Beli Unit"></fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset><button type="submit" id="form-submit" class="orange-button">Kirim Pesan</button></fieldset>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  <footer>
+    <div class="container text-center">
+      <p>Hak Cipta © 2026 Iqbal Estate Indonesia. Seluruh hak dilindungi undang-undang.</p>
+    </div>
+  </footer>
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2026 Iqbal Estate Indonesia. Built for Excellence.</p>
-      </div>
-    </div>
-  </footer>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init({ duration: 1000, once: true }); </script>
 
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/custom.js"></script>
-  
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
-
-  </body>
-</html>
+</body>
+</html> 
