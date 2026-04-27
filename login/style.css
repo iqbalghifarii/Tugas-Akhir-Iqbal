@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   width: 100%;
   padding: 0 10px;
+  overflow: hidden; /* Mencegah scroll yang tidak perlu pada halaman login */
 }
 
 body::before {
@@ -21,21 +22,25 @@ body::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* Pastikan file hero-bg.jpg ada di folder yang sama atau ganti dengan warna solid */
-  background: url("hero-bg.jpg"), #000;
+  /* Menggunakan gambar villa mewah dengan overlay gelap agar kaca (glassmorphism) lebih terlihat */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url("https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop");
   background-position: center;
   background-size: cover;
+  z-index: -1;
 }
 
 .wrapper {
   width: 400px;
-  border-radius: 12px; /* Dibuat sedikit lebih melengkung */
+  border-radius: 12px;
   padding: 30px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
-  z-index: 1;
+  /* Efek Glassmorphism */
+  background: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 form {
@@ -47,6 +52,7 @@ h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #fff;
+  letter-spacing: 1px;
 }
 
 .input-field {
@@ -76,13 +82,13 @@ h2 {
   color: #fff;
 }
 
-/* Transisi label saat input aktif atau terisi */
+/* Transisi label saat aktif - Menggunakan warna oranye mencolok sesuai preferensi Anda */
 .input-field input:focus~label,
 .input-field input:valid~label {
   font-size: 0.8rem;
   top: 10px;
   transform: translateY(-120%);
-  color: #f35525; /* Aksen oranye villa saat aktif */
+  color: #f35525; 
 }
 
 .forget {
@@ -91,10 +97,11 @@ h2 {
   justify-content: space-between;
   margin: 25px 0 35px 0;
   color: #fff;
+  font-size: 14px;
 }
 
 #remember {
-  accent-color: #f35525; /* Ganti ke oranye agar senada */
+  accent-color: #f35525;
 }
 
 .forget label {
@@ -110,6 +117,7 @@ h2 {
 .wrapper a {
   color: #efefef;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .wrapper a:hover {
@@ -120,11 +128,11 @@ h2 {
 button {
   background: #fff;
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   padding: 12px 20px;
   cursor: pointer;
-  border-radius: 25px; /* Dibuat lebih bulat/modern sesuai desain villa */
+  border-radius: 25px; 
   font-size: 16px;
   border: 2px solid transparent;
   transition: 0.3s ease;
@@ -133,13 +141,14 @@ button {
 button:hover {
   color: #fff;
   border-color: #fff;
-  background: #f35525; /* Hover oranye terang */
+  background: #f35525; 
 }
 
 .register {
   text-align: center;
   margin-top: 30px;
   color: #fff;
+  font-size: 15px;
 }
 
 /* =========================================
@@ -156,13 +165,13 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  text-decoration: none !important; /* Menghapus garis bawah */
+  text-decoration: none !important;
   font-weight: 600;
   font-size: 14px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 9999;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  animation: shake 3s infinite;
+  animation: shake 4s infinite; /* Interval animasi sedikit diperlambat agar lebih elegan */
 }
 
 .whatsapp-float img {
@@ -175,10 +184,9 @@ button:hover {
   background-color: #20ba5a;
 }
 
-/* Animasi Getar Halus */
 @keyframes shake {
-  0%, 80%, 100% { transform: rotate(0deg); }
-  85% { transform: rotate(5deg); }
-  90% { transform: rotate(-5deg); }
-  95% { transform: rotate(5deg); }
+  0%, 85%, 100% { transform: rotate(0deg); }
+  88% { transform: rotate(5deg); }
+  92% { transform: rotate(-5deg); }
+  96% { transform: rotate(5deg); }
 }
