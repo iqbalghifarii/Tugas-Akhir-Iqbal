@@ -47,3 +47,15 @@
         width: 100%;
     }
 }
+
+
+/* Pastikan semua elemen link memiliki kursor pointer */
+a {
+    cursor: pointer;
+}
+
+/* Tambahkan efek transparansi sedikit saat dihover agar lebih interaktif */
+.social-links a:hover, .main-button a:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
