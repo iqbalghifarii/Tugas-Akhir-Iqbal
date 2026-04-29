@@ -180,42 +180,4 @@ button:hover {
 }
 
 
-/* =========================================
-   STYLE TOMBOL WHATSAPP MELAYANG
-   ========================================= */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none !important;
-  font-weight: 600;
-  font-size: 14px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  animation: shake 4s infinite; /* Interval animasi sedikit diperlambat agar lebih elegan */
-}
 
-.whatsapp-float img {
-  width: 25px;
-  height: 25px;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  background-color: #20ba5a;
-}
-
-@keyframes shake {
-  0%, 85%, 100% { transform: rotate(0deg); }
-  88% { transform: rotate(5deg); }
-  92% { transform: rotate(-5deg); }
-  96% { transform: rotate(5deg); }
-}
