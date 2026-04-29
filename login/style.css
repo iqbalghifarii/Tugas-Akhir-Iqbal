@@ -155,19 +155,19 @@ button:hover {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 20px; /* Jarak dari bawah */
-    right: 20px;  /* Jarak dari kanan */
-    background-color: #FF0000; /* Merah Khas YouTube */
-    color: #FFF;
+    bottom: 30px; /* Jarak dari bawah */
+    right: 30px;  /* Jarak dari kanan */
+    background-color: #FF0000; /* Merah YouTube */
+    color: #FFFFFF;
     border-radius: 50%;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 9999; /* Memastikan tombol selalu di paling depan */
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .floating-btn-yt i {
@@ -175,9 +175,10 @@ button:hover {
 }
 
 .floating-btn-yt:hover {
-    background-color: #cc0000; /* Merah lebih gelap saat kursor menempel */
-    transform: scale(1.1); /* Efek membesar sedikit */
+    background-color: #cc0000;
+    transform: scale(1.1); /* Efek membesar saat disentuh */
 }
+
 
 
 
